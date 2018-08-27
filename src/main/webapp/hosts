@@ -1,0 +1,27 @@
+localhost ansible_connection=local ansible_ssh_user=ubuntu
+
+[dev]
+jvcdp.mywire.org
+
+[sit]
+sit.jvcdp.mywire.org
+
+[uat]
+uat.jvcdp.mywire.org
+
+[staging]
+staging.jvcdp.mywire.org
+
+[prod]
+jvcdp.mywire.org
+
+[datacenter:children]
+dev
+sit
+uat
+staging
+prod
+
+[datacenter:vars]
+ansible_connection=ssh
+ansible_ssh_user=ec2-user
