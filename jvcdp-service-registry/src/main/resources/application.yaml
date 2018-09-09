@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    com.netflix.discovery: 'DEBUG'
+    org.springframework.cloud: 'DEBUG'
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
