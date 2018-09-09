@@ -1,13 +1,12 @@
 spring:
   application:
     name: jvcdp-ui
-
 logging:
   level:
     org.springframework.web: DEBUG
 
 server:
-  port: 0
+  port: 8081
 
 zuul:
   routes:
@@ -15,14 +14,13 @@ zuul:
       path: /api/serverstats/**
       serviceId: jvcdp-serverstats
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8080/eureka
+jvcdp-serverstats:
+  ribbon:
+    listOfServers: localhost:8082
 
 ribbon:
   eureka:
-    enabled: true
+    enabled: false
 
 flyway:
   enabled: false
