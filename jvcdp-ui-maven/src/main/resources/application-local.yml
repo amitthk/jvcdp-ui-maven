@@ -10,11 +10,11 @@ server:
 
 zuul:
   routes:
-    api:
+    serverstats:
       path: /api/serverstats/**
-      serviceId: jvcdp-serverstats
+      serviceId: serverstats
 
-jvcdp-serverstats:
+serverstats:
   ribbon:
     listOfServers: localhost:8082
 

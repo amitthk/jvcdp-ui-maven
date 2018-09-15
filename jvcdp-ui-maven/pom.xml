@@ -75,6 +75,11 @@
 					            <arg value="-c"/>
 					            <arg value="npm run ng build"/>
 					          </exec>
+								<exec executable="/bin/bash" osfamily="unix"
+									  dir="${project.basedir}/src/main/webapp">
+									<arg value="-c"/>
+									<arg value="yarn run ng build"/>
+								</exec>
 					        </tasks>
 					      </configuration>
 				      <goals>

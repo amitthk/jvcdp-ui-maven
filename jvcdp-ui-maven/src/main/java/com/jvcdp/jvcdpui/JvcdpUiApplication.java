@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 
 @EnableZuulProxy
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 @SpringBootApplication
 public class JvcdpUiApplication {
 
