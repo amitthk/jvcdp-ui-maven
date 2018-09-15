@@ -1,0 +1,6 @@
+cassandra:
+  contactpoints: 127.0.0.1
+  port: 9142
+  keyspace: jvcdp_keyspace
+  startuptimeoutinseconds: 60
+  entityBasePackages: com.jvcdp.cassandra.model, com.jvcdp.cassandra.service
