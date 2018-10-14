@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: jvcdpIgniteCache
+  jackson:
+    default-property-inclusion: non_null
+
+enableFilePersistence: true
+igniteConnectorPort: 11211
+igniteServerPortRange: 47500..47509
+ignitePersistenceFilePath: ./data
+igniteInstanceName: jvcdpIgniteCache
+initialDelay: 10000
+fixedDelay: 60000
+
+
